@@ -61,14 +61,14 @@ public class MainPanel extends JPanel implements ActionListener, KeyListener {
     int snakeY = snake[0].y;
     if (snakeX > 950) {
       snake[0].setPosition(0, snakeY);
-    }
-    if (snakeX < 0) {
+    } 
+    else  if(snakeX < 0) {
       snake[0].setPosition(1000, snakeY);
     }
-    if (snakeY < 0) {
+    else if (snakeY < 0) {
       snake[0].setPosition(snakeX, 900);
     }
-    if (snakeY > 850) {
+    else if (snakeY > 850) {
       snake[0].setPosition(snakeX, 0);
     }
   }
